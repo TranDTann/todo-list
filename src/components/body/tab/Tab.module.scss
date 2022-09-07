@@ -1,0 +1,9 @@
+.btn-tab {
+    &:focus {
+        background-color: rgb(60, 56, 56);
+        color: #fff;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}

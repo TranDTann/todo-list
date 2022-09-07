@@ -1,10 +1,9 @@
 import { useRef, useState } from "react";
 
-function AddJob({callbackFunction, todos, setTodos}) {
+function AddJob({ todos, setTodos}) {
     const [job, setJob] = useState('')
     const inputRef = useRef()
     
-    callbackFunction(todos)
     
     const handleAdd = () => {
         setTodos(prev => (
