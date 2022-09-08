@@ -1,4 +1,49 @@
-.job-item {
-    display: flex;
-    
+.job-list {
+    position: relative;
+    margin-top: 48px;
 }
+
+.job-item {
+    position: relative;
+    min-height: 28px;
+    background-color: #fff;
+    display: flex;   
+    align-items: center;
+    color: #333;
+    border-radius: 999px;
+    margin-bottom: 6px;
+}
+
+.check-box {
+    position: absolute;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.desc-job {
+    margin-left: 36px;
+    width: 88%;
+    border: none;
+}
+
+.btn-clear-all {
+    position: absolute;
+    top: -28px;
+    left: 0;
+    padding: 2px 6px;
+    border-radius: 9999px;
+    background-color: #250642;
+    color: rgb(20, 180, 205);
+    border: 1px solid rgb(20, 180, 205);
+
+    &:hover {
+        background-color: rgb(115, 58, 58);
+        color: var(--text-color);
+        cursor: pointer;
+    }
+}
+
+
+

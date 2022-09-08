@@ -31,12 +31,13 @@ function Tab({todos, setTodos}) {
         }
     }
 
-
     return ( 
-        <div>
-            {tabs.map(tab => (
-                <button onClick={() => handleTab(tab.id)} className={cx('btn-tab')}>{tab.title}</button>
-            ))}
+        <div className={cx('wrapper')}>
+            <div className={cx('list-tab')}>
+                {tabs.map(tab => (
+                    <button onClick={() => handleTab(tab.id)} className={cx('btn-tab')}>{tab.title}</button>
+                ))}
+            </div>
             <List data={getData()} setTodos={setTodos} todos={todos}/>
         </div>
      );
