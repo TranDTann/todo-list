@@ -1,9 +1,9 @@
 import className from 'classnames/bind';
+import { useState } from 'react';
 
 import styles from './App.module.scss'
 import AddJob from './components/addJob/AddJob';
 import Tab from './components/body/tab/Tab';
-import { useState } from 'react';
 
 const cx=className.bind(styles)
 

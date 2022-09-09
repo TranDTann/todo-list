@@ -1,0 +1,53 @@
+.job-item {
+    position: relative;
+    min-height: 28px;
+    background-color: #fff;
+    display: flex;   
+    align-items: center;
+    color: #333;
+    border-radius: 999px;
+    margin-bottom: 6px;
+
+    &:hover .icon-pen{
+        display: inline;
+    }
+}
+
+.check-box {
+    position: absolute;
+    left: 8px;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+}
+
+.desc-job {
+    margin-left: 36px;
+    height: 24px;
+    width: 85%;
+    border: none !important;
+    outline: none;
+}
+
+.icon-pen {
+    position: absolute;
+    right: 32px;
+    padding: 4px;
+    display: none;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+.icon-save {
+    position: absolute;
+    right: 32px;
+    cursor: pointer;
+    padding: 4px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

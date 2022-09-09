@@ -35,7 +35,15 @@ function Tab({todos, setTodos}) {
         <div className={cx('wrapper')}>
             <div className={cx('list-tab')}>
                 {tabs.map(tab => (
-                    <button onClick={() => handleTab(tab.id)} className={cx('btn-tab')}>{tab.title}</button>
+                    <button 
+                    onClick={() => handleTab(tab.id)} 
+                    className={cx('btn-tab')} 
+                    style = {tab.id===currTab ? {
+                        backgroundColor: 'rgb(115, 58, 58)',
+                        color: '#ffffffe6'
+                    } : {}}>
+                        {tab.title}
+                    </button>
                 ))}
             </div>
             <List data={getData()} setTodos={setTodos} todos={todos}/>
